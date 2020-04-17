@@ -1,0 +1,6 @@
+{
+  "db": {
+    "url": "jdbc:postgres://host",
+    "user" : "db_user1"
+  }
+}

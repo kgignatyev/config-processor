@@ -1,0 +1,9 @@
+service1:
+  name: geo
+  user: user1
+  password: "super secret password"
+
+
+secret:
+  create: true
+  name: ${service1/name}

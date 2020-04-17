@@ -1,0 +1,15 @@
+play:
+  service:
+    name: play-${release}
+  configSecret:
+    data:
+      spring.datasource.name: geograply-play-data-source
+      spring.datasource.url: jdbc:postgresql://${db.host}:5432/${db-name}
+      spring.datasource.username: geograply_play_user
+      spring.datasource.password: ${service1/password}
+      spring.datasource.platform: postgres
+
+gw:
+  play-service: ${play/service/name}
+  db-url: ${db/url}
+  create: ${secret/create}
