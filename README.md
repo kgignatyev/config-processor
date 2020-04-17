@@ -48,3 +48,12 @@ it can be also compiled down to native image and invoked like this:
         
         cat   target/values.yaml
         cat   target/some.sql
+
+
+ native
+
+![native](docs/native-timing.png)   
+
+Java jar execution
+
+![java jar](docs/java-timing.png)
